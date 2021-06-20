@@ -5,7 +5,7 @@
 
 ```shell
 git clone https://github.com/jizizr/24_game.git
-cd 24—_game
+cd 24_game
 python3 24game.py
 ```
 
