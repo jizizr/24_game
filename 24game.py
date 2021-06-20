@@ -202,20 +202,18 @@ while True:
     while True:
         e=input('输入您的算式：')
         aa.sort()
-        b=0
-        for i in e:
-            if i in ["(",")"]:
-                b+=1
-        if e==a:
-            e=a+'()'
-        if b%2!=0:
-            print('括号错了')
-            print('')
-            continue
         if e=="a":
             answer(a,b,c,d)
             print('------------------------------------------------------------------------')
             break
+        p=0
+        for i in e:
+            if i in ["(",")"]:
+                p+=1
+        if p%2!=0:
+            print('括号错了')
+            print('')
+            continue
         elif aa!=panduan(e):
             print('你用的不是这4个数！请重输！')
             print('')
